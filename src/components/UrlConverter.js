@@ -79,7 +79,7 @@ const UrlConverter = () => {
         <div className="results">
           <p>
             Converted URL: 
-            <a href={convertedUrl} target="_blank" rel="noopener noreferrer">
+            <a href={convertedUrl} target="_blank" rel="noopener noreferrer" className="converted-url">
               {convertedUrl}
             </a>
             <Button
@@ -94,6 +94,7 @@ const UrlConverter = () => {
           <TextArea
             readOnly
             value={embedCode}
+            className="embed-code"
           />
           <Button
             className="copy-button"

@@ -61,9 +61,17 @@
 .url-converter .results a {
   color: #0f62fe;
   text-decoration: none;
+  word-break: break-all;
 }
 
-.url-converter textarea {
+.url-converter .results .converted-url {
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.url-converter .embed-code {
   width: 100%;
   height: 100px;
   margin-top: 10px;
